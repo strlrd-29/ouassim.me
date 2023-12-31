@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+
+import { ThemeProvider } from '~/components/theme-provider'
+import { fontMono, fontSans } from '~/lib/fonts'
+import { cn } from '~/lib/utils'
 
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export const metadata: Metadata = {
-	title: 'Ghribi Ouassim',
-	description: 'Software developer based in Algeria',
+	title: 'Ghribi Ouassim - Software developer 👋',
+	description: 'Software developer based in Algeria.',
 }
 
 export default function RootLayout({
@@ -15,7 +16,17 @@ export default function RootLayout({
 }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>{children}</body>
+			<body
+				className={cn(
+					'container max-w-3xl py-8 md:py-12',
+					fontSans.className,
+					fontMono.variable,
+				)}
+			>
+				<ThemeProvider attribute="class" defaultTheme="stone">
+					{children}
+				</ThemeProvider>
+			</body>
 		</html>
 	)
 }
