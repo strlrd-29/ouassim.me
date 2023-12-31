@@ -18,12 +18,12 @@ export default function RootLayout({
 		<html lang="en">
 			<body
 				className={cn(
-					'container max-w-3xl py-8 md:py-12',
+					'container max-w-3xl py-8 md:py-12 px-4',
 					fontSans.className,
 					fontMono.variable,
 				)}
 			>
-				<ThemeProvider attribute="class" defaultTheme="stone">
+				<ThemeProvider attribute="class" defaultTheme="orange">
 					{children}
 				</ThemeProvider>
 			</body>

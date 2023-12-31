@@ -1,7 +1,9 @@
+import { Header } from '~/components/header'
+
 export default function Home() {
 	return (
 		<main>
-			<h1 className="text-4xl">hello</h1>
+			<Header />
 		</main>
 	)
 }
