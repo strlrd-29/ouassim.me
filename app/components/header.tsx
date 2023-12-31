@@ -38,7 +38,7 @@ export function Header() {
 							<HoverCardContent>
 								<div className="flex items-center justify-between">
 									<div className="flex items-center gap-2">
-										<MobileIcon className="w-4 h-4" />
+										<MobileIcon className="size-4" />
 										<Link
 											href="https://github.com/strlrd-29/.dotfiles"
 											target="_blank"
@@ -61,14 +61,14 @@ export function Header() {
 					target="_blank"
 					className={cn(buttonVariants({ variant: 'outline', size: 'icon' }))}
 				>
-					<GitHubLogoIcon className="w-4 h-4" />
+					<GitHubLogoIcon className="size-4" />
 				</Link>
 				<Link
 					href="https://twitter.com/strlrd29"
 					target="_blank"
 					className={cn(buttonVariants({ variant: 'outline', size: 'icon' }))}
 				>
-					<TwitterLogoIcon className="w-4 h-4" />
+					<TwitterLogoIcon className="size-4" />
 				</Link>
 			</div>
 		</header>
